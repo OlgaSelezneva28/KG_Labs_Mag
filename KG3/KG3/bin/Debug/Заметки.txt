@@ -1,0 +1,50 @@
+#version 130
+
+in vec3 vertexPosition;
+in vec3 vertexColor;
+in vec3 vertexNormal;
+in vec2 vertexUV;
+
+out vec3 color;
+out vec3 normal;
+out vec2 uv;
+
+uniform mat4 projection_matrix;
+uniform mat4 view_matrix;
+uniform mat4 model_matrix;
+
+void main(void)
+{
+    color = vertexColor;
+
+    normal = normalize((model_matrix * vec4(floor(vertexNormal), 0)).xyz);
+    uv = vertexUV;
+
+    gl_Position = projection_matrix * view_matrix * model_matrix * vec4(vertexPosition, 1);
+}
+";
+
+        public static string FragmentShader = @"
+#version 130
+
+uniform sampler2D texture;
+uniform vec3 light_direction;
+uniform bool enable_lighting;
+
+in vec3 normal;
+in vec2 uv;
+in vec3 color;
+
+out vec4 fragment;
+
+void main(void)
+{
+    float diffuse = max(dot(normal, light_direction), 0);
+    float ambient = 0.3;
+    float lighting = (enable_lighting ? max(diffuse, ambient) : 1);
+
+    fragment = lighting * texture2D(texture, uv);
+
+   // fragment = vec4(color, 1);
+}
+";

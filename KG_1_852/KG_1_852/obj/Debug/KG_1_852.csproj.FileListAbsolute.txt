@@ -1,0 +1,9 @@
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\bin\Debug\KG_1_852.exe.config
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\bin\Debug\KG_1_852.exe
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\bin\Debug\KG_1_852.pdb
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.csprojResolveAssemblyReference.cache
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.Form1.resources
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.Properties.Resources.resources
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.csproj.GenerateResource.Cache
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.exe
+c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.pdb

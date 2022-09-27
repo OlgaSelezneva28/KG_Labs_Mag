@@ -1,0 +1,6 @@
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\bin\Debug\KG3.exe.config
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\bin\Debug\KG3.exe
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\bin\Debug\KG3.pdb
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\obj\Debug\KG3.csprojResolveAssemblyReference.cache
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\obj\Debug\KG3.exe
+c:\users\olya2\documents\visual studio 2012\Projects\KG3\KG3\obj\Debug\KG3.pdb
