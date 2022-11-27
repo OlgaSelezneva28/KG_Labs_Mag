@@ -7,3 +7,14 @@ c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug
 c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.csproj.GenerateResource.Cache
 c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.exe
 c:\users\olya2\documents\visual studio 2012\Projects\KG_1_852\KG_1_852\obj\Debug\KG_1_852.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\bin\Debug\KG_1_852.exe.config
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.exe
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\bin\Debug\KG_1_852.exe
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\bin\Debug\KG_1_852.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.csprojResolveAssemblyReference.cache
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.Form1.resources
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.Properties.Resources.resources
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\obj\Debug\KG_1_852.csproj.GenerateResource.Cache
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.dll
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_1_852\KG_1_852\bin\Debug\Microsoft.Office.Tools.Excel.v4.0.Utilities.xml

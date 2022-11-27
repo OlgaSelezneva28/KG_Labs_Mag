@@ -540,13 +540,13 @@ namespace KG_2_9
 
              //Округления 
              //1-1
-             CE11.Add(new Point(x + LFundament / 10, y - HFundament , z + WL / 2 - WColumns / 2));
              CE11.Add(new Point(x + LFundament / 10 + LColumns, y - HFundament , z + WL / 2 - WColumns / 2));
+             CE11.Add(new Point(x + LFundament / 10, y - HFundament, z + WL / 2 - WColumns / 2));
              CE11.Add(new Point(x + LFundament / 10, y - HFundament , z + WL / 2 - WColumns / 2 - Otstup));
              CE11.Add(new Point(x + LFundament / 10 + LColumns, y - HFundament , z + WL / 2 - WColumns / 2 - Otstup));
 
-             CE11.Add(new Point(x + LFundament / 10, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
              CE11.Add(new Point(x + LFundament / 10 + LColumns, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
+             CE11.Add(new Point(x + LFundament / 10, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
              CE11.Add(new Point(x + LFundament / 10, y - HFundament - HColumns, z + WL / 2 - WColumns / 2 - Otstup));
              CE11.Add(new Point(x + LFundament / 10 + LColumns, y - HFundament - HColumns, z + WL / 2 - WColumns / 2 - Otstup));
              //2-1
@@ -570,13 +570,13 @@ namespace KG_2_9
              CE12.Add(new Point(x + LFundament / 10 + LColumns + Otstup, y - HFundament - HColumns, z + WL / 2 + WColumns / 2));
              CE12.Add(new Point(x + LFundament / 10 + LColumns + Otstup, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
              //2-2
-             CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament, z + WL / 2 - WColumns / 2));
              CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament, z + WL / 2 + WColumns / 2));
+             CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament, z + WL / 2 - WColumns / 2));
              CE22.Add(new Point(x + 9 * LFundament / 10 + Otstup, y - HFundament, z + WL / 2 - WColumns / 2));
              CE22.Add(new Point(x + 9 * LFundament / 10 + Otstup, y - HFundament, z + WL / 2 + WColumns / 2));
-
-             CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
+             
              CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament - HColumns, z + WL / 2 + WColumns / 2));
+             CE22.Add(new Point(x + 9 * LFundament / 10, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
              CE22.Add(new Point(x + 9 * LFundament / 10 + Otstup, y - HFundament - HColumns, z + WL / 2 - WColumns / 2));
              CE22.Add(new Point(x + 9 * LFundament / 10 + Otstup, y - HFundament - HColumns, z + WL / 2 + WColumns / 2));
              //1-3
@@ -621,28 +621,28 @@ namespace KG_2_9
              CE24.Add(new Point(x + 9 * LFundament / 10 - LColumns - Otstup, y - HFundament - HColumns, z + WL / 2 + WColumns / 2));
 
              // Занесем в общий список 
-             All.Add(Fundament);
-             All.Add(Ladder);
-             All.Add(Building);
-             All.Add(Roof);
-             All.Add(Roof);
-             All.Add(Roof2);
-             All.Add(Door);
-             All.Add(DoorTop);
-             All.Add(Column1);
-             All.Add(Column2);
+             All.Add(Fundament); //0
+             All.Add(Ladder);//1
+             All.Add(Building);//2
+             All.Add(Roof);//3
+             All.Add(Roof);//4
+             All.Add(Roof2);//5
+             All.Add(Door);//6
+             All.Add(DoorTop);//7
+             All.Add(Column1);//8
+             All.Add(Column2);//9
 
-             All.Add(CE11);
-             All.Add(CE21);
-             All.Add(CE12);
-             All.Add(CE22);
-             All.Add(CE13);
-             All.Add(CE23);
-             All.Add(CE14);
-             All.Add(CE24);
+             All.Add(CE11);//10
+             All.Add(CE21);//11
+             All.Add(CE12);//12
+             All.Add(CE22);//13
+             All.Add(CE13);//14
+             All.Add(CE23);//15
+             All.Add(CE14);//16
+             All.Add(CE24);//17
 
-             All.Add(LampDown);
-             All.Add(LampUp);
+             All.Add(LampDown); //18
+             All.Add(LampUp); //19
 
              // In 3D
              Double a = Convert.ToDouble(textBox1.Text);
@@ -762,9 +762,12 @@ namespace KG_2_9
              DrawRectangle(AT[6], g, coord);
              DrawDoorTop(AT[6], AT[7], g, coord);
 
-             DrawRectangle(AT[8], g, coord);
-             DrawRectangle(AT[9], g, coord);
-
+             if (coord != "z")
+             {
+                 DrawRectangle(AT[8], g, coord);
+                 DrawRectangle(AT[9], g, coord);
+             }
+             
              DrawRoundingColumns(AT[8], 0, 1, AT[10], g, coord);
              DrawRoundingColumns(AT[9], 0, 1, AT[11], g, coord);
              DrawRoundingColumns(AT[8], 1, 2, AT[12], g, coord);
@@ -773,6 +776,7 @@ namespace KG_2_9
              DrawRoundingColumns(AT[9], 2, 3, AT[15], g, coord);
              DrawRoundingColumns(AT[8], 3, 0, AT[16], g, coord);
              DrawRoundingColumns(AT[9], 3, 0, AT[17], g, coord);
+              
              DrawFlashlight(AT[18], g, coord);
              DrawFlashlight(AT[19], g, coord);
          }
@@ -1129,15 +1133,15 @@ namespace KG_2_9
          }
 
          // проекция 3D на 2D
-         private Point convert_3D_in_2D_Point(Point t, double angel_OXY, double angel_res_OXY)
+         private Point convert_3D_in_2D_Point(Point t, double angel_OXZ, double angel_OXY)
          {
              double xo = pictureBox1.Width / 2; 
              double yo = pictureBox1.Height / 2;
 
              // проицируем
-             double res_x = -t.z * Math.Sin(angel_OXY) + t.x * Math.Cos(angel_OXY) + xo;
-             double res_y = -(t.z * Math.Cos(angel_OXY) + t.x * Math.Sin(angel_OXY)) * 
-                 Math.Sin(angel_res_OXY) + t.y * Math.Cos(angel_res_OXY) + yo;
+             double res_x = -t.z * Math.Sin(angel_OXZ) + t.x * Math.Cos(angel_OXZ) + xo;
+             double res_y = -(t.z * Math.Cos(angel_OXZ) + t.x * Math.Sin(angel_OXZ)) * 
+                 Math.Sin(angel_OXY) + t.y * Math.Cos(angel_OXY) + yo;
 
              return new Point((int)(res_x), (int)(res_y));
          }

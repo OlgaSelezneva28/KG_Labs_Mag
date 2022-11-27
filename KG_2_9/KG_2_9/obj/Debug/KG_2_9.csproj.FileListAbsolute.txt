@@ -7,3 +7,12 @@ c:\users\olya2\documents\visual studio 2012\Projects\KG_2_9\KG_2_9\obj\Debug\KG_
 c:\users\olya2\documents\visual studio 2012\Projects\KG_2_9\KG_2_9\obj\Debug\KG_2_9.csproj.GenerateResource.Cache
 c:\users\olya2\documents\visual studio 2012\Projects\KG_2_9\KG_2_9\obj\Debug\KG_2_9.exe
 c:\users\olya2\documents\visual studio 2012\Projects\KG_2_9\KG_2_9\obj\Debug\KG_2_9.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\bin\Debug\KG_2_9.exe.config
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.exe
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\bin\Debug\KG_2_9.exe
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\bin\Debug\KG_2_9.pdb
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.csprojResolveAssemblyReference.cache
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.Form1.resources
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.Properties.Resources.resources
+C:\Users\Olya2\Documents\Visual Studio 2012\Projects\KG_Labs_1-3\KG_2_9\KG_2_9\obj\Debug\KG_2_9.csproj.GenerateResource.Cache

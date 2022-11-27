@@ -67,7 +67,7 @@ namespace KG3
             Glut.glutKeyboardFunc(OnKeyboard);
             Glut.glutKeyboardUpFunc(OffKeyboard);
 
-            //Eстанавливает обратный вызов закрытия окна. freeglut вызывает обратный вызов закрытия, когда окно вот-вот будет уничтожено.
+            //Устанавливает обратный вызов закрытия окна. freeglut вызывает обратный вызов закрытия, когда окно вот-вот будет уничтожено.
             Glut.glutCloseFunc(OnClose);
 
             //Включим тест глубины для правильного z-порядка фрагментов 
@@ -81,7 +81,7 @@ namespace KG3
             //Установим камеру и матрицу проекции
             pr.Use();
             pr["projection_matrix"].SetValue(Matrix4.CreatePerspectiveFieldOfView(0.45f, (float)width / height, 0.1f, 1000f));
-            pr["view_matrix"].SetValue(Matrix4.LookAt(new Vector3(0, 0, 30), new Vector3(0, 0, 0), new Vector3(0, 1, 0)));
+            pr["view_matrix"].SetValue(Matrix4.LookAt(new Vector3(0, 0, 35), new Vector3(0, 0, 0), new Vector3(0, 1, 0)));
 
             //Освещение
             pr["light_direction"].SetValue(new Vector3(1, 1, 0));
@@ -507,6 +507,7 @@ out vec3 color;
 out vec3 normal;
 out vec3 position;
 out vec2 uv;
+out vec3 FragPos;
 
 uniform mat4 projection_matrix;
 uniform mat4 view_matrix;
@@ -518,7 +519,7 @@ void main(void)
 
     normal = normalize((model_matrix * vec4(floor(vertexNormal), 0)).xyz);
     uv = vertexUV;
-
+    FragPos = vec3(model_matrix * vec4(position, 1.0f));
 
     gl_Position = projection_matrix * view_matrix * model_matrix * vec4(vertexPosition, 1);
     position = gl_Position.xyz;
@@ -544,7 +545,7 @@ uniform bool enable_lighting;
 uniform bool enable_material;
 
 //Материал 
-    uniform vec3 ambientM; //окпужающий свет
+    uniform vec3 ambientM; //окружающий свет
     uniform vec3 diffuseM; // рассеянный 
     uniform vec3 specularM; // бликовый 
     uniform float shininessM; // сила блеска 
